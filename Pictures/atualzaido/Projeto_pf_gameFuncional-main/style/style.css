@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none; /* Corrigido de 'nome' para 'none' */
+    outline: none;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(20, 20, 20);
+}
+
+#cenario {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('../resources/fundo.jpg'); /* Ajuste o caminho para a imagem  tirar daqui e chamar uma funcao */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área do body */
+}
+
+#menu{
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#estudante{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-image: url('../resources/estudante.webp'); /* Ajuste o caminho para a imagem  tirar daqui e chamar uma funcao */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: contain;
+    bottom: 0;
+
+}
+
+#iniciar{
+    position: absolute;
+    color: black ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer; /* quando o mouse pasasar em cima do botao, vai virar uma mao*/
+
+
+
+}
